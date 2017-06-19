@@ -6,7 +6,8 @@ class L298N():
 		self.pin1 = pin1
 		self.pin2 = pin2
 		self.pwm = pwm
-		
+
+		GPIO.setmode(GPIO.BOARD)
 		GPIO.setup(self.pin1, GPIO.OUT)
 		GPIO.setup(self.pin2, GPIO.OUT)
 		GPIO.setup(self.pwm, GPIO.OUT)
